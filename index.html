@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body class="main">
+        <h1>Generate a <br><span class="green-text">random password</span></h1>
+        <h3 class="grey-text">
+            Never use an insecure password again.
+        </h3>
+        <div id="filter-div">
+            <div id="len-input">
+                <div>
+                    <label for="pw-len">Length:</label>
+                    <input id="pw-len" type="number" min="15" max="24" value="15">
+                    <p id="pw-len-info">Must be between 15 and 24.</p>    
+                </div>
+                <!-- <input for="pw-len" id="pw-len-range" type="range" min="15" max="30"> -->
+            </div>
+            <div id="checkbox-div">
+                <div id="symbols-only">
+                    <label for="symbols-chk">Include symbols</label>
+                    <input class="chkbx" id="symbols-chk" type="checkbox" checked>
+                </div>
+                <div id="nums-only">
+                    <label for="nums-chk">Include numbers</label>
+                    <input class="chkbx" id="nums-chk" type="checkbox" checked>
+                </div>
+            </div>
+        </div>
+        <button class="btn">
+            Generate passwords
+        </button>
+        <hr>
+        <div class="copy-btn-div">
+            <button id="copybtn1" readonly>
+                Password 1
+            </button>
+            <button id="copybtn2" readonly>
+                Password 2
+            </button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

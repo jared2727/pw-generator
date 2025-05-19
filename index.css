@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: "Karla", sans-serif;
+    color: #F9FAFB;
+    background-color: #1F2937;
+}
+
+.main {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+    /* border: 2px solid white; */
+    border-radius: 10px;
+}
+.green-text {
+    color: #4ADF86;
+    
+}
+
+.btn {
+    background-color: #059669;
+    border-radius: 3px;
+    border: none;
+    padding: 5px 10px;
+    font-size: small;
+    color: #F9FAFB;
+    
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover {
+    background-color: #047857;
+}
+
+#copybtn1, #copybtn2 {
+    background-color: #374151;
+    border-radius: 5px;
+    border: none;
+    padding: 7px 25px;
+    font-size: small;
+    color: #4B5563;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor: copy;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+}
+#copybtn1:focus, #copybtn2:focus {
+    outline: none;
+}
+
+.copy-btn-div {
+    margin-bottom: 20px;
+}
+
+.grey-text {
+    color: #D1D5DB;
+    font-size: medium;
+    align-self: flex-start;
+    margin-bottom: 30px;
+}
+
+hr {
+    height: 5px;
+    color: #4ADF86;
+}
+
+#pw-len {
+    width: 40px;
+    margin: -2px 0px 0px 10px;
+}
+
+#len-input {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 20px 0;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#filter-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: small;
+}
+
+#symbols-only, #nums-only {
+    margin: 0 20px 5px 10px;
+}
+
+#nums-only {
+    margin-top: 10px;
+}
+
+.chkbx {
+    margin-left: 5px;
+}
+
+#pw-len-info {
+    padding-top: -10px;
+    font-size: small;
+    font-style: italic;
+}
+
+#checkbox-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
