@@ -7,6 +7,8 @@ let copyTwoClicked = false;
 const pwBtn = document.querySelector(".btn");
 const copyElOne = document.querySelector("#copybtn1");
 const copyElTwo = document.querySelector("#copybtn2");
+const copyIconOne = document.querySelector("#copy-icon-1");
+const copyIconTwo = document.querySelector("#copy-icon-2");
 const symbolsEl = document.querySelector("#symbols-chk");
 const numsEl = document.querySelector("#nums-chk");
 
@@ -100,24 +102,18 @@ function generate() {
 };
 
 // // Copy on click
+    // if icon is clicked
+copyIconOne.addEventListener("click", function() {
+    navigator.clipboard.writeText( copyElOne.textContent );
+});
+
+copyIconTwo.addEventListener("click", function() {
+    navigator.clipboard.writeText( copyElTwo.textContent );});
+    
+    // if text area is clicked
 copyElOne.addEventListener("click", function() {
     navigator.clipboard.writeText( copyElOne.textContent );
-    copyOneClicked = true;
 });
 
 copyElTwo.addEventListener("click", function() {
-    navigator.clipboard.writeText( copyElOne.textContent );
-    copyTwoClicked = true;
-});
-
-if (copyOneClicked) {
-    function copyOneText() {
-        copyElOne.focus();
-        copyElOne.select();
-    }
-} else if (copyTwoClicked) {
-    function copyTwoText() {
-        copyElTwo.focus();
-        copyElTwo.select();
-    }
-}
+    navigator.clipboard.writeText( copyElTwo.textContent );});

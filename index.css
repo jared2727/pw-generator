@@ -6,13 +6,17 @@ body {
 }
 
 .main {
-    margin: 5px;
+    margin: 5% auto 0 auto;
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
     align-items: flex-start;
     padding: 0 20px;
-    /* border: 2px solid white; */
+    border: 2px solid white;
     border-radius: 10px;
+    min-width: 350px;
+    max-width: 350px;
+
 }
 .green-text {
     color: #4ADF86;
@@ -44,12 +48,10 @@ body {
     padding: 7px 25px;
     font-size: small;
     color: #4B5563;
-    margin-top: 20px;
-    margin-right: 20px;
-    cursor: copy;
+    margin-right: 10px;
     width: 250px;
     height: 30px;
-    text-align: center;
+
 }
 #copybtn1:focus, #copybtn2:focus {
     outline: none;
@@ -57,6 +59,8 @@ body {
 
 .copy-btn-div {
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .grey-text {
@@ -117,3 +121,16 @@ input:focus {
     flex-direction: column;
     justify-content: flex-start;
 }
+
+#copy-icon-1, #copy-icon-2 {
+    cursor: pointer;
+    height: 20px;
+    width: auto;
+    align-self: center;
+}
+
+.copyarea-icon {
+    display: flex;
+    margin: 0 0 10px 0;
+}
+
