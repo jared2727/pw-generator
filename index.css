@@ -78,6 +78,11 @@ hr {
 #pw-len {
     width: 40px;
     margin: -2px 0px 0px 10px;
+    /* text-align: center; */
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1
 }
 
 #len-input {
