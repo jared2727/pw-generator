@@ -48,12 +48,16 @@ body {
     border: none;
     padding: 7px 25px;
     font-size: small;
-    color: #4B5563;
+    color: #4ADF86;
     margin-right: 10px;
     width: 250px;
     height: 30px;
-
 }
+
+input[type=checkbox] {
+    accent-color: #4ADF86;
+}
+
 #copybtn1:focus, #copybtn2:focus {
     outline: none;
 }
@@ -84,6 +88,18 @@ hr {
 
 input[type=number]::-webkit-inner-spin-button {
     opacity: 1
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 #len-input {
